@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E21914CA29BBA52800D1EB2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914C929BBA52800D1EB2C /* AppDelegate.swift */; };
+		E21914CC29BBA52800D1EB2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914CB29BBA52800D1EB2C /* SceneDelegate.swift */; };
+		E21914CE29BBA52800D1EB2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914CD29BBA52800D1EB2C /* ViewController.swift */; };
+		E21914D129BBA52800D1EB2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21914CF29BBA52800D1EB2C /* Main.storyboard */; };
+		E21914D329BBA52900D1EB2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21914D229BBA52900D1EB2C /* Assets.xcassets */; };
+		E21914D629BBA52900D1EB2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21914D429BBA52900D1EB2C /* LaunchScreen.storyboard */; };
+		E21914E129BBA52900D1EB2C /* Convert_to_KZTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914E029BBA52900D1EB2C /* Convert_to_KZTTests.swift */; };
+		E21914EB29BBA52900D1EB2C /* Convert_to_KZTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914EA29BBA52900D1EB2C /* Convert_to_KZTUITests.swift */; };
+		E21914ED29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E21914DD29BBA52900D1EB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E21914BE29BBA52800D1EB2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21914C529BBA52800D1EB2C;
+			remoteInfo = "Convert to KZT";
+		};
+		E21914E729BBA52900D1EB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E21914BE29BBA52800D1EB2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21914C529BBA52800D1EB2C;
+			remoteInfo = "Convert to KZT";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E21914C629BBA52800D1EB2C /* Convert to KZT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Convert to KZT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21914C929BBA52800D1EB2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E21914CB29BBA52800D1EB2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E21914CD29BBA52800D1EB2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E21914D029BBA52800D1EB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E21914D229BBA52900D1EB2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E21914D529BBA52900D1EB2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E21914D729BBA52900D1EB2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E21914DC29BBA52900D1EB2C /* Convert to KZTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convert to KZTTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21914E029BBA52900D1EB2C /* Convert_to_KZTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert_to_KZTTests.swift; sourceTree = "<group>"; };
+		E21914E629BBA52900D1EB2C /* Convert to KZTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convert to KZTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21914EA29BBA52900D1EB2C /* Convert_to_KZTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert_to_KZTUITests.swift; sourceTree = "<group>"; };
+		E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert_to_KZTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E21914C329BBA52800D1EB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914D929BBA52900D1EB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914E329BBA52900D1EB2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E21914BD29BBA52800D1EB2C = {
+			isa = PBXGroup;
+			children = (
+				E21914C829BBA52800D1EB2C /* Convert to KZT */,
+				E21914DF29BBA52900D1EB2C /* Convert to KZTTests */,
+				E21914E929BBA52900D1EB2C /* Convert to KZTUITests */,
+				E21914C729BBA52800D1EB2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E21914C729BBA52800D1EB2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E21914C629BBA52800D1EB2C /* Convert to KZT.app */,
+				E21914DC29BBA52900D1EB2C /* Convert to KZTTests.xctest */,
+				E21914E629BBA52900D1EB2C /* Convert to KZTUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E21914C829BBA52800D1EB2C /* Convert to KZT */ = {
+			isa = PBXGroup;
+			children = (
+				E21914C929BBA52800D1EB2C /* AppDelegate.swift */,
+				E21914CB29BBA52800D1EB2C /* SceneDelegate.swift */,
+				E21914CD29BBA52800D1EB2C /* ViewController.swift */,
+				E21914CF29BBA52800D1EB2C /* Main.storyboard */,
+				E21914D229BBA52900D1EB2C /* Assets.xcassets */,
+				E21914D429BBA52900D1EB2C /* LaunchScreen.storyboard */,
+				E21914D729BBA52900D1EB2C /* Info.plist */,
+			);
+			path = "Convert to KZT";
+			sourceTree = "<group>";
+		};
+		E21914DF29BBA52900D1EB2C /* Convert to KZTTests */ = {
+			isa = PBXGroup;
+			children = (
+				E21914E029BBA52900D1EB2C /* Convert_to_KZTTests.swift */,
+			);
+			path = "Convert to KZTTests";
+			sourceTree = "<group>";
+		};
+		E21914E929BBA52900D1EB2C /* Convert to KZTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E21914EA29BBA52900D1EB2C /* Convert_to_KZTUITests.swift */,
+				E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */,
+			);
+			path = "Convert to KZTUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E21914C529BBA52800D1EB2C /* Convert to KZT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21914F029BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZT" */;
+			buildPhases = (
+				E21914C229BBA52800D1EB2C /* Sources */,
+				E21914C329BBA52800D1EB2C /* Frameworks */,
+				E21914C429BBA52800D1EB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Convert to KZT";
+			productName = "Convert to KZT";
+			productReference = E21914C629BBA52800D1EB2C /* Convert to KZT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E21914DB29BBA52900D1EB2C /* Convert to KZTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21914F329BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZTTests" */;
+			buildPhases = (
+				E21914D829BBA52900D1EB2C /* Sources */,
+				E21914D929BBA52900D1EB2C /* Frameworks */,
+				E21914DA29BBA52900D1EB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E21914DE29BBA52900D1EB2C /* PBXTargetDependency */,
+			);
+			name = "Convert to KZTTests";
+			productName = "Convert to KZTTests";
+			productReference = E21914DC29BBA52900D1EB2C /* Convert to KZTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E21914E529BBA52900D1EB2C /* Convert to KZTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21914F629BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZTUITests" */;
+			buildPhases = (
+				E21914E229BBA52900D1EB2C /* Sources */,
+				E21914E329BBA52900D1EB2C /* Frameworks */,
+				E21914E429BBA52900D1EB2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E21914E829BBA52900D1EB2C /* PBXTargetDependency */,
+			);
+			name = "Convert to KZTUITests";
+			productName = "Convert to KZTUITests";
+			productReference = E21914E629BBA52900D1EB2C /* Convert to KZTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E21914BE29BBA52800D1EB2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					E21914C529BBA52800D1EB2C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					E21914DB29BBA52900D1EB2C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E21914C529BBA52800D1EB2C;
+					};
+					E21914E529BBA52900D1EB2C = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = E21914C529BBA52800D1EB2C;
+					};
+				};
+			};
+			buildConfigurationList = E21914C129BBA52800D1EB2C /* Build configuration list for PBXProject "Convert to KZT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E21914BD29BBA52800D1EB2C;
+			productRefGroup = E21914C729BBA52800D1EB2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E21914C529BBA52800D1EB2C /* Convert to KZT */,
+				E21914DB29BBA52900D1EB2C /* Convert to KZTTests */,
+				E21914E529BBA52900D1EB2C /* Convert to KZTUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E21914C429BBA52800D1EB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21914D629BBA52900D1EB2C /* LaunchScreen.storyboard in Resources */,
+				E21914D329BBA52900D1EB2C /* Assets.xcassets in Resources */,
+				E21914D129BBA52800D1EB2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914DA29BBA52900D1EB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914E429BBA52900D1EB2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E21914C229BBA52800D1EB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21914CE29BBA52800D1EB2C /* ViewController.swift in Sources */,
+				E21914CA29BBA52800D1EB2C /* AppDelegate.swift in Sources */,
+				E21914CC29BBA52800D1EB2C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914D829BBA52900D1EB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21914E129BBA52900D1EB2C /* Convert_to_KZTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21914E229BBA52900D1EB2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21914EB29BBA52900D1EB2C /* Convert_to_KZTUITests.swift in Sources */,
+				E21914ED29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E21914DE29BBA52900D1EB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21914C529BBA52800D1EB2C /* Convert to KZT */;
+			targetProxy = E21914DD29BBA52900D1EB2C /* PBXContainerItemProxy */;
+		};
+		E21914E829BBA52900D1EB2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21914C529BBA52800D1EB2C /* Convert to KZT */;
+			targetProxy = E21914E729BBA52900D1EB2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E21914CF29BBA52800D1EB2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E21914D029BBA52800D1EB2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E21914D429BBA52900D1EB2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E21914D529BBA52900D1EB2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E21914EE29BBA52900D1EB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E21914EF29BBA52900D1EB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E21914F129BBA52900D1EB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Convert to KZT/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E21914F229BBA52900D1EB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Convert to KZT/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E21914F429BBA52900D1EB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convert to KZT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Convert to KZT";
+			};
+			name = Debug;
+		};
+		E21914F529BBA52900D1EB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZTTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Convert to KZT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Convert to KZT";
+			};
+			name = Release;
+		};
+		E21914F729BBA52900D1EB2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Convert to KZT";
+			};
+			name = Debug;
+		};
+		E21914F829BBA52900D1EB2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PRJZ5KWYW9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "sanche.Convert-to-KZTUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Convert to KZT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E21914C129BBA52800D1EB2C /* Build configuration list for PBXProject "Convert to KZT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21914EE29BBA52900D1EB2C /* Debug */,
+				E21914EF29BBA52900D1EB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21914F029BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21914F129BBA52900D1EB2C /* Debug */,
+				E21914F229BBA52900D1EB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21914F329BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21914F429BBA52900D1EB2C /* Debug */,
+				E21914F529BBA52900D1EB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21914F629BBA52900D1EB2C /* Build configuration list for PBXNativeTarget "Convert to KZTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21914F729BBA52900D1EB2C /* Debug */,
+				E21914F829BBA52900D1EB2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E21914BE29BBA52800D1EB2C /* Project object */;
+}
