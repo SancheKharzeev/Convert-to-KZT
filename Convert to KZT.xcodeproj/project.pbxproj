@@ -16,6 +16,9 @@
 		E21914E129BBA52900D1EB2C /* Convert_to_KZTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914E029BBA52900D1EB2C /* Convert_to_KZTTests.swift */; };
 		E21914EB29BBA52900D1EB2C /* Convert_to_KZTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914EA29BBA52900D1EB2C /* Convert_to_KZTUITests.swift */; };
 		E21914ED29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */; };
+		E21914FB29BBA56B00D1EB2C /* CurrencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914FA29BBA56B00D1EB2C /* CurrencyManager.swift */; };
+		E21914FD29BBA58800D1EB2C /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914FC29BBA58800D1EB2C /* CurrencyModel.swift */; };
+		E21914FF29BBA5A000D1EB2C /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21914FE29BBA5A000D1EB2C /* CurrencyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E21914E629BBA52900D1EB2C /* Convert to KZTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Convert to KZTUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21914EA29BBA52900D1EB2C /* Convert_to_KZTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert_to_KZTUITests.swift; sourceTree = "<group>"; };
 		E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convert_to_KZTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E21914FA29BBA56B00D1EB2C /* CurrencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyManager.swift; sourceTree = "<group>"; };
+		E21914FC29BBA58800D1EB2C /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		E21914FE29BBA5A000D1EB2C /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,8 @@
 			children = (
 				E21914C929BBA52800D1EB2C /* AppDelegate.swift */,
 				E21914CB29BBA52800D1EB2C /* SceneDelegate.swift */,
-				E21914CD29BBA52800D1EB2C /* ViewController.swift */,
+				E21914F929BBA54800D1EB2C /* Model */,
+				E219150029BBA5D100D1EB2C /* Controller */,
 				E21914CF29BBA52800D1EB2C /* Main.storyboard */,
 				E21914D229BBA52900D1EB2C /* Assets.xcassets */,
 				E21914D429BBA52900D1EB2C /* LaunchScreen.storyboard */,
@@ -125,6 +132,24 @@
 				E21914EC29BBA52900D1EB2C /* Convert_to_KZTUITestsLaunchTests.swift */,
 			);
 			path = "Convert to KZTUITests";
+			sourceTree = "<group>";
+		};
+		E21914F929BBA54800D1EB2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E21914FA29BBA56B00D1EB2C /* CurrencyManager.swift */,
+				E21914FE29BBA5A000D1EB2C /* CurrencyData.swift */,
+				E21914FC29BBA58800D1EB2C /* CurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E219150029BBA5D100D1EB2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E21914CD29BBA52800D1EB2C /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E21914FF29BBA5A000D1EB2C /* CurrencyData.swift in Sources */,
+				E21914FD29BBA58800D1EB2C /* CurrencyModel.swift in Sources */,
 				E21914CE29BBA52800D1EB2C /* ViewController.swift in Sources */,
 				E21914CA29BBA52800D1EB2C /* AppDelegate.swift in Sources */,
+				E21914FB29BBA56B00D1EB2C /* CurrencyManager.swift in Sources */,
 				E21914CC29BBA52800D1EB2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
