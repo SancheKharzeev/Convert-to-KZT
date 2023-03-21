@@ -22,19 +22,19 @@ struct CurrencyModel {
         return String(format: "%.2f", valueUSD)
     }
     var previousStringUSD: String {
-        return String(format: "%.2f", previousUSD)
+        return String(format: "%.2f", (valueUSD - previousUSD))
     }
     var valueStringKZT: String {
         return String(format: "%.2f", valueKZT)
     }
     var previousStringKZT: String {
-        return String(format: "%.2f", previousKZT)
+        return String(format: "%.2f", (valueKZT - previousKZT))
     }
     var valueStringCNY: String {
         return String(format: "%.2f", valueCNY)
     }
     var previousStringCNY: String {
-        return String(format: "%.2f", previousCNY)
+        return String(format: "%.2f", (valueCNY - previousCNY))
     }
     
     var valueStringTenge: String {
@@ -43,7 +43,7 @@ struct CurrencyModel {
     }
     
     var preStringTenge: String {
-        let inTenge = 100 / previousKZT
+        let inTenge = (100 / valueKZT) - (100 / previousKZT)
         return String(format: "%.2f", inTenge)
     }
     
