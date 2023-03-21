@@ -30,7 +30,7 @@ struct CurrencyManager {
     func performReques(with urlString: String) { // выполняем запрос
         
         if let url = URL(string: urlString) {
-            print(url)
+           // print(url)
             let session = URLSession(configuration: .default)
             
             let task = session.dataTask(with: url) { (data, response, error) in
@@ -58,7 +58,7 @@ struct CurrencyManager {
         
         do {
             let decodedData = try decoder.decode(CurrencyData.self, from: currencyData)
-            print(decodedData.Valute.CNY.Value)
+           // print(decodedData.Valute.CNY.Value)
             let usdCurrent = decodedData.Valute.USD.Value
             let usdPrevious = decodedData.Valute.USD.Previous
             
@@ -68,13 +68,13 @@ struct CurrencyManager {
             let cnyCurrent = decodedData.Valute.CNY.Value
             let cnyPrevious = decodedData.Valute.CNY.Previous
             
-            var dateString = decodedData.Date
+            let dateString = decodedData.Date
             
             let formatter = ISO8601DateFormatter()
             let yourDate = formatter.date(from: dateString)!
             let printDate = "\(yourDate)"
             
-            var inTengeCurrent = 100
+            _ = 100
             
             let currency = CurrencyModel(date: printDate, valueUSD: usdCurrent, previousUSD: usdPrevious, valueKZT: kztCurrent, previousKZT: kztPrevious, valueCNY: cnyCurrent, previousCNY: cnyPrevious)
             return currency

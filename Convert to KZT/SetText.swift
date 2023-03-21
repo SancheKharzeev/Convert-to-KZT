@@ -12,14 +12,14 @@ class SetText: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setLabelText()
-        widthText()
+        
         
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setLabelText()
-        widthText()
+        
       
     }
     
@@ -31,14 +31,8 @@ class SetText: UILabel {
         
     }
     
-    func widthText() {
-        translatesAutoresizingMaskIntoConstraints = false // обязательное условие отключения автолейаут
-        NSLayoutConstraint.activate([
-      //  widthAnchor.constraint(equalToConstant: 100),
-      //  heightAnchor.constraint(equalToConstant: 50),
-        
-        ])
-    }
+   
+    
     
     
 }

@@ -47,4 +47,14 @@ struct CurrencyModel {
         return String(format: "%.2f", inTenge)
     }
     
+    var changeColorUSD: Bool {
+        let answer = (valueUSD - previousUSD)
+        if (valueUSD - previousUSD) >= 0 {
+            return true
+        } else {
+            return false
+        }
+        
+        
+    }
 }
