@@ -17,7 +17,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
     
     var currencyManager = CurrencyManager()
     
-    let usdCurrentPriceLabel1 = SetText()
+    let usdCurrentPriceLabel = SetText()
     let usdPreviousPriceLabel = SetText()
     let kztCurrentPriceLabel = SetText()
     let kztPreviousPriceLabel = SetText()
@@ -26,19 +26,33 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
     let inTengeCurrentPriceLabel = SetText()
     let inTengePreviousPriceLabel = SetText()
     
-    
-    
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) { // передал данные из главного Вью во второй
+        let pinkVC = segue.destination as! PinkViewController
+            pinkVC.receivedUSDString = usdCurrentPriceLabel.text!
+            pinkVC.receivedCNYString = cnyCurrentPriceLabel.text!
+            pinkVC.receivedKZTString = inTengeCurrentPriceLabel.text!
+        
+    }
+    
+    @IBOutlet weak var goToCalculateButton: UIButton!
+    
+    @IBAction func goToCalculate(_ sender: UIButton) {
+        
+        
+    }
+    
     
     @IBAction func updateDataButton(_ sender: UIButton) {
         currencyManager.fetchCurrency()
+        goToCalculateButton.isHidden = false
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         currencyManager.delegate = self
-        view.backgroundColor = .black
+        view.backgroundColor = .darkGray
         viewLighterCorner()
         positionUSDLabel()
         positionUSD_Change_Label()
@@ -52,7 +66,10 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         kztTitle()
         cnyTitle()
         viewBlackCube()
+        goToCalculateButton.isHidden = true
         
+        
+       
         
         
     }
@@ -60,7 +77,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
     func didUpdateCurrency(currency: CurrencyModel) {
         DispatchQueue.main.async {
             
-            self.usdCurrentPriceLabel1.text = currency.valueStringUSD
+            self.usdCurrentPriceLabel.text = currency.valueStringUSD
             self.usdPreviousPriceLabel.text = currency.previousStringUSD
             self.kztCurrentPriceLabel.text = currency.valueStringKZT
             self.kztPreviousPriceLabel.text = currency.previousStringKZT
@@ -71,9 +88,6 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
             self.inTengePreviousPriceLabel.text = currency.preStringTenge
             
             
-            
-            
-            
         }
     }
     
@@ -82,11 +96,11 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
     }
     
     func positionUSDLabel() {
-        view.addSubview(usdCurrentPriceLabel1)
-        usdCurrentPriceLabel1.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(usdCurrentPriceLabel)
+        usdCurrentPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            usdCurrentPriceLabel1.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            usdCurrentPriceLabel1.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -194)
+            usdCurrentPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
+            usdCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -194 + position)
         ])
     }
     
@@ -95,7 +109,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         usdPreviousPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             usdPreviousPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            usdPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -162)
+            usdPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -162 + position)
         ])
         usdPreviousPriceLabel.textColor = .systemMint
        
@@ -106,7 +120,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         kztCurrentPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             kztCurrentPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            kztCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100)
+            kztCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100 + position)
         ])
     }
     
@@ -115,7 +129,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         kztPreviousPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             kztPreviousPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            kztPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30)
+            kztPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -30 + position)
         ])
         kztPreviousPriceLabel.textColor = .systemMint
     }
@@ -125,7 +139,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         cnyCurrentPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             cnyCurrentPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            cnyCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 65)
+            cnyCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 65 + position)
         ])
     }
     
@@ -134,7 +148,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         cnyPreviousPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             cnyPreviousPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            cnyPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100)
+            cnyPreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100 + position)
         ])
         cnyPreviousPriceLabel.textColor = .systemMint
     }
@@ -144,7 +158,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         inTengeCurrentPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             inTengeCurrentPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            inTengeCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -70)
+            inTengeCurrentPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -70 + position)
         ])
     }
     
@@ -153,7 +167,7 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         inTengePreviousPriceLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             inTengePreviousPriceLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 100),
-            inTengePreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0)
+            inTengePreviousPriceLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0 + position)
         ])
         inTengePreviousPriceLabel.textColor = .systemMint
     }
@@ -163,13 +177,17 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         usdTitle.text = "USD / RUB"
         usdTitle.textColor = .systemYellow
         usdTitle.font = UIFont(name: "Apple SD Gothic Neo Bold", size: 29)
-        usdTitle.backgroundColor = .darkGray
+        
         view.addSubview(usdTitle)
+        usdTitle.alpha = 0
+        UILabel.animate(withDuration: 1.5) {
+            usdTitle.alpha = 1.0
+        }
         
         usdTitle.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             usdTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            usdTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -230)
+            usdTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -230 + position)
         ])
     }
     
@@ -178,13 +196,18 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         kztTitle.text = "KZT / RUB"
         kztTitle.textColor = .systemYellow
         kztTitle.font = UIFont(name: "Apple SD Gothic Neo Bold", size: 29)
-        kztTitle.backgroundColor = .darkGray
+        
         view.addSubview(kztTitle)
+        
+        kztTitle.alpha = 0
+        UILabel.animate(withDuration: 1.5) {
+            kztTitle.alpha = 1.0
+        }
         
         kztTitle.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             kztTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            kztTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -130)
+            kztTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -130 + position)
         ])
     }
     
@@ -194,43 +217,63 @@ class ViewController: UIViewController, CurrencyManagerDelegate {
         cnyTitle.text = "CNY / RUB"
         cnyTitle.textColor = .systemYellow
         cnyTitle.font = UIFont(name: "Apple SD Gothic Neo Bold", size: 29)
-        cnyTitle.backgroundColor = .darkGray
+        
+        cnyTitle.alpha = 0
+        UILabel.animate(withDuration: 1.5) {
+            cnyTitle.alpha = 1.0
+        }
 
         cnyTitle.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             cnyTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            cnyTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 32)
+            cnyTitle.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: (position + 32))
         ])
+        
+        
+        
     }
     
     func viewLighterCorner() {
         let viewCorner = UIView()
         view.addSubview(viewCorner)
         viewCorner.layer.borderWidth = 2
-        viewCorner.layer.borderColor = UIColor.systemYellow.cgColor
+        
+        
+        viewCorner.alpha = 0
+        UILabel.animate(withDuration: 1.5) {
+            viewCorner.alpha = 1.0
+            viewCorner.layer.borderColor = UIColor.systemYellow.cgColor
+        }
         
         viewCorner.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             viewCorner.widthAnchor.constraint(equalToConstant: 350),
             viewCorner.heightAnchor.constraint(equalToConstant: 400),
             viewCorner.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            viewCorner.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -80)
+            viewCorner.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: (-80 + position))
             ])
+        
+        viewCorner.layer.shadowColor = UIColor.white.cgColor
+        viewCorner.layer.shadowOpacity = 1
+        viewCorner.layer.shadowOffset = .zero
+        viewCorner.layer.shadowRadius = 5
     }
     
     func viewBlackCube() {
         let viewBlackCube = UIView()
         view.addSubview(viewBlackCube)
-        viewBlackCube.backgroundColor = .black
+        viewBlackCube.backgroundColor = .darkGray
         
         viewBlackCube.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             viewBlackCube.widthAnchor.constraint(equalToConstant: 150),
             viewBlackCube.heightAnchor.constraint(equalToConstant: 20),
             viewBlackCube.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 87),
-            viewBlackCube.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -262)
+            viewBlackCube.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: (-262 + position))
             ])
     }
+    
+    let position = CGFloat(25)
 }
 
 

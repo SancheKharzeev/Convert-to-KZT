@@ -15,16 +15,12 @@ protocol CurrencyManagerDelegate {
 
 struct CurrencyManager {
     let currencyURL = "https://www.cbr-xml-daily.ru/daily_json.js"
-    
-    
     var delegate: CurrencyManagerDelegate?
-    
-    
     
     func fetchCurrency() { // подготавливаем ссылку для извлечения курса валюты
         let urlString = "https://www.cbr-xml-daily.ru/daily_json.js"
         performReques(with: urlString)
-        print("fetchCurrency", urlString)
+       
     }
     
     func performReques(with urlString: String) { // выполняем запрос
@@ -77,6 +73,7 @@ struct CurrencyManager {
             _ = 100
             
             let currency = CurrencyModel(date: printDate, valueUSD: usdCurrent, previousUSD: usdPrevious, valueKZT: kztCurrent, previousKZT: kztPrevious, valueCNY: cnyCurrent, previousCNY: cnyPrevious)
+            
             return currency
             
             
@@ -89,4 +86,5 @@ struct CurrencyManager {
         return nil
     }
     
+  
 }

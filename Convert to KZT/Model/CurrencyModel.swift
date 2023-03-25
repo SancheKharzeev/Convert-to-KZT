@@ -48,7 +48,7 @@ struct CurrencyModel {
     }
     
     var changeColorUSD: Bool {
-        let answer = (valueUSD - previousUSD)
+        _ = (valueUSD - previousUSD)
         if (valueUSD - previousUSD) >= 0 {
             return true
         } else {
